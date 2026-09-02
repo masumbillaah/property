@@ -68,17 +68,23 @@ export default function AddListingPage() {
         }
       }
 
-      // ২. প্রোপার্টি ডাটা সাবমিট করা
-      const payload = {
+     const payload = {
         title: formData.title,
         status: 'pending',
         featured_media: featuredMediaId,
+        // সরাসরি প্যারামিটারে পাঠানো
+        property_price: formData.price,
+        property_location: formData.location,
+        property_beds: formData.bedrooms,
+        property_baths: formData.bathrooms,
+        property_area: formData.area,
+        // মেটা অবজেক্টেও রাখা
         meta: {
-          price: formData.price,
-          location: formData.location,
-          bedrooms: formData.bedrooms,
-          bathrooms: formData.bathrooms,
-          area: formData.area,
+          property_price: formData.price,
+          property_location: formData.location,
+          property_beds: formData.bedrooms,
+          property_baths: formData.bathrooms,
+          property_area: formData.area,
         },
       };
 
