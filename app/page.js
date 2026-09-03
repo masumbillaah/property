@@ -79,7 +79,7 @@ export default function Home() {
           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.08] mb-8 drop-shadow-2xl">
             Architectural Mastery. <br className="hidden sm:block" />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-300 to-white">
-              Unrivaled Luxury Property.
+              Unrivaled Luxury.
             </span>
           </h1>
 
